@@ -1,0 +1,54 @@
+html
+  head
+    title DeviceInfoApp
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='/favicon.ico')
+
+    link(
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU="
+      crossorigin="anonymous"
+    )
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+   nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+          a.navbar-brand(href='/') Device Info
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample04', aria-controls='navbarsExample04', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarsExample04.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item.active
+                a.nav-link(href='/')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='/') Info
+              li.nav-item
+                a.nav-link(href='/') About Me
+              li.nav-item
+                a.nav-link(href='/') Contact Me
+              
+            form.form-inline.my-2.my-md-0
+              input.form-control(type='text', placeholder='Search') 
+          
+.container
+  h2
+    p 
+    p Device Width / Height : #{height} 
+    p Device Size : #{width}  
+    p Time Zone : #{timestamp}
+    p Ip Address : #{ipaddr}
+    p Dns IP : #{dnsip}
+    p IP : #{ipaddr}
+    p CPU : #{cpus}
+    p HostName : #{hostname}
+    p Platform : #{platform}
+    p Type : #{type}
+    p Network Info : #{addrdom}
+
+    
